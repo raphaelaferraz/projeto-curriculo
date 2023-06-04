@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo</title>
+  <link rel="stylesheet" href="./assets/css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="onoff">
+      <p class="onoff__paragrafo zoom">Dark Mode</p>
+      <input type="checkbox" class="toggle" id="onoff1">
+      <label for="onoff1"></label>
+    </div>
+    <div class="cabecalho__div-container">
+      <div class="cabecalho__div-container__div-imagem">
+        <img src="./assets/img/imagem.png" alt="Foto de perfil da Raphaela" class="cabecalho__div-container__div-imagem__imagem">
+      </div>
+      <div class="cabecalho__div-container-geral">
+        <div class="cabecalho__div-container__div-informacoes">
+          <h1 class="cabecalho__div-container__titulo zoom" data-nome></h1>
+          <div class="cabecalho__div-container__div-linha"></div>
+          <h2 class="cabecalho__div-container__subtitulo zoom" data-cargo></h2>
+        </div>
+  
+        <div class="cabecalho__div-container__div-informacoes">
+          <ul class="cabecalho__div-container__div-informacoes__lista">
+            <li class="cabecalho__div-container__div-informacoes__lista__item">
+              <img src="./assets/img/endereco.svg" alt="Ícone de endereço" class="cabecalho__div-container__div-informacoes__lista__item__imagem">
+              <p class="cabecalho__div-container__div-informacoes__lista__item__paragrafo zoom" data-endereco></p>
+            </li>
+            <li class="cabecalho__div-container__div-informacoes__lista__item">
+              <img src="./assets/img/telefone.svg" alt="Ícone de telefone" class="cabecalho__div-container__div-informacoes__lista__item__imagem">
+              <p class="cabecalho__div-container__div-informacoes__lista__item__paragrafo zoom" data-celular></p>
+            </li>
+            <li class="cabecalho__div-container__div-informacoes__lista__item">
+              <img src="./assets/img/email.svg" alt="Ícone de email" class="cabecalho__div-container__div-informacoes__lista__item__imagem">
+              <p class="cabecalho__div-container__div-informacoes__lista__item__paragrafo zoom" data-email></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <ul class="lista">
+      <li class="lista__item espaco">
+        <h3 class="lista__item__titulo zoom">
+          Resumo profissional
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo zoom" data-resumo></p>
+        </section>
+      </li>
+      <li class="lista__item">
+        <h3 class="lista__item__titulo zoom">
+          Formação Acadêmica
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-nome-curso></p>
+          <p class="lista__item__secao__paragrafo zoom" data-nome-instituicao></p>
+          <p class="lista__item__secao__paragrafo zoom" data-periodo-formacao></p>
+        </section>
+      </li>
+      <li class="lista__item espaco">
+        <h3 class="lista__item__titulo zoom">
+          Experiência Profissional
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-nome-cargo></p>
+          <p class="lista__item__secao__paragrafo zoom" data-nome-empresa></p>
+          <p class="lista__item__secao__paragrafo zoom" data-periodo-experiencia></p>
+        </section>
+      </li>
+      <li class="lista__item">
+        <h3 class="lista__item__titulo zoom">
+          Trabalho Voluntário
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-nome-voluntario></p>
+          <p class="lista__item__secao__paragrafo zoom" data-descricao-voluntario></p>
+          <p class="lista__item__secao__paragrafo zoom" data-periodo-voluntario></p>
+        </section>
+      </li>
+      <li class="lista__item espaco">
+        <h3 class="lista__item__titulo zoom">
+          Projetos
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-nome-projeto></p>
+          <p class="lista__item__secao__paragrafo zoom" data-descricao-projeto></p>
+          <p class="lista__item__secao__paragrafo zoom" data-periodo-projeto></p>
+        </section>
+      </li>
+      <li class="lista__item">
+        <h3 class="lista__item__titulo zoom">
+          Cursos Extracurriculares
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-nome-extracurricular></p>
+          <p class="lista__item__secao__paragrafo zoom" data-instituicao-extracurricular></p>
+          <p class="lista__item__secao__paragrafo zoom">
+            Carga horária: <span data-carga-horaria></span> horas
+          </p>
+        </section>
+      </li>
+      <li class="lista__item espaco">
+        <h3 class="lista__item__titulo zoom">
+          Competências Profissionais
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-competencia></p>
+          <p class="lista__item__secao__paragrafo zoom">
+            Nível: <span data-nivel-competencia></span>
+          </p>
+        </section>
+      </li>
+      <li class="lista__item">
+        <h3 class="lista__item__titulo zoom">
+          Habilidades Profissionais
+        </h3>
+        <div class="lista__item__titulo__div-linha"></div>
+        <section class="lista__item__secao">
+          <p class="lista__item__secao__paragrafo-principal zoom" data-habilidade></p>
+          <p class="lista__item__secao__paragrafo zoom">
+            Nível: <span data-nivel-habilidade>5</span>
+          </p> 
+        </section>
+      </li>
+    </ul>
+  </main>
+
+  <script src="./assets/js/eventos.js"></script>
+  <script src="./assets/js/preencheInformacoes.js"></script>
+</body>
+</html>
