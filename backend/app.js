@@ -4,7 +4,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const sqlite3 = require('sqlite3').verbose();
 const DBPATH = './backend/data/database';
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 1234;
 const app = express();  
 
 //Carrega toda a parte estática no frontend 
